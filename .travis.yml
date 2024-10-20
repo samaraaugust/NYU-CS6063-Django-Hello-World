@@ -13,6 +13,7 @@ deploy:
   region: us-east-1
   app: mysite-polls-app-dev
   env: mysite-polls-app-dev-env
+  bucket_name: elasticbeanstalk-us-east-1-783764614931
   on:
     branch: main
 branches:
