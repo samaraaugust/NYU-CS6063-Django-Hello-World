@@ -15,5 +15,6 @@ deploy:
   region: "us-east-1"
   app: "mysite-polls-app-dev"
   env: "mysite-polls-app-dev-env"
-on:
-  branch: main
+branches:
+  only:
+    - main
