@@ -4,7 +4,7 @@ python:
 script:
   - black --check .
   - flake8 --max-line-length=88 .
-  - coverage run --source='.' manage.py test
+  - coverage run manage.py test
 install:
   - pip install -r requirements.txt
 after_success:

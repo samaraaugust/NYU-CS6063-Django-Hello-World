@@ -1,0 +1,9 @@
+[coverage:run]
+omit =
+    */migrations/*
+    */admin.py
+    */settings.py
+    */wsgi.py
+    */asgi.py
+    */urls.py
+    */models.py
