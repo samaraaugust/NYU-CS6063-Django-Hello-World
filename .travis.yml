@@ -6,10 +6,10 @@ install:
 script:
   - black --check .
   - flake8 --max-line-length=88 .
-  - coverage run manage.py test
+  - coverage run --source='.' manage.py tes
 after_success:
-  # - COVERALLS_REPO_TOKEN=$COVERALLS_REPO_TOKEN coveralls
-  - coveralls
+  - COVERALLS_REPO_TOKEN=$COVERALLS_REPO_TOKEN coveralls
+  # - coveralls
 deploy:
   provider: elasticbeanstalk
   access_key_id: $AWS_ACCESS_KEY_ID
