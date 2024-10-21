@@ -6,7 +6,7 @@ install:
 script:
   - black --check .
   - flake8 --max-line-length=88 .
-  - coverage run --source='.' manage.py tes
+  - coverage run --source='.' manage.py test
 after_success:
   - COVERALLS_REPO_TOKEN=$COVERALLS_REPO_TOKEN coveralls
   # - coveralls
