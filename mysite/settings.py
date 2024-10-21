@@ -25,7 +25,10 @@ SECRET_KEY = "&#n54s)3q)f3_d7p+*vk3p-mea3l1tm+9!fv@c(m3tr_&f!5!9"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["mysite-polls-app-dev-env.eba-bskeempu.us-east-1.elasticbeanstalk.com", "localhost"]
+ALLOWED_HOSTS = [
+    "mysite-polls-app-dev-env.eba-bskeempu.us-east-1.elasticbeanstalk.com",
+    "localhost",
+]
 
 
 # Application definition
